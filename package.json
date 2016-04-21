@@ -1,0 +1,27 @@
+{
+  "name": "test-gulp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "eva",
+  "license": "ISC",
+  "devDependencies": {
+    "auto-prefixer": "^0.4.2",
+    "beepbeep": "^1.2.0",
+    "browser": "^0.2.6",
+    "browser-sync": "^2.12.3",
+    "colors": "^1.1.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "imagemin-pngquant": "^4.2.2",
+    "sync": "^0.2.5"
+  }
+}
