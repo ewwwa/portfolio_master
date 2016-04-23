@@ -27,7 +27,7 @@ body {
 
 .claim-link {
   padding-top: 2rem;
-  padding-bottom: 4rem; }
+  padding-bottom: 2rem; }
 
 .divide {
   border: 0.2rem solid #FFFFFF;
@@ -42,7 +42,7 @@ body {
     margin-top: 4rem; }
   .claim-link {
     padding-top: 3rem;
-    padding-bottom: 8rem; }
+    padding-bottom: 4rem; }
   .divide {
     border: 0.4rem solid #FFFFFF;
     border-radius: 2rem;
@@ -53,9 +53,7 @@ body {
 .section_container {
   background-color: red;
   text-align: center;
-  padding-top: 1rem;
-  margin-left: 3rem;
-  margin-right: 3rem; }
+  padding-top: 1rem; }
 
 .stroke_clear {
   border-bottom: 0.3rem solid #50E3C2;
@@ -177,6 +175,12 @@ h4 {
       font-size: 1.5rem;
       line-height: 2rem; } }
 
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+  color: #0000FD; }
+
 h5 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -198,7 +202,8 @@ p {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
-  text-align: center; }
+  text-align: center;
+  color: #4A4A4A; }
 
 html {
   font-family: sans-serif;
