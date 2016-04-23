@@ -11,9 +11,10 @@ body {
   background-size: cover;
   background-color: #0000FD; }
 
+/* MEDIAQUERIES */
 /* CLAIM BACKGROUND CLASSES */
-.container {
-  padding-top: 4rem;
+#container {
+  padding-top: 2rem;
   width: 100%; }
 
 .content {
@@ -26,7 +27,7 @@ body {
 
 .claim-link {
   padding-top: 2rem;
-  padding-bottom: 8rem; }
+  padding-bottom: 2rem; }
 
 .divide {
   border: 0.2rem solid #FFFFFF;
@@ -41,14 +42,39 @@ body {
     margin-top: 4rem; }
   .claim-link {
     padding-top: 3rem;
-    padding-bottom: 8rem; }
+    padding-bottom: 4rem; }
   .divide {
     border: 0.4rem solid #FFFFFF;
     border-radius: 2rem;
     width: 20%;
     margin: 0 auto; } }
 
-/* FORM */
+/* CONTAINER CLASSES */
+.section_container {
+  background-color: #FFFFFF;
+  text-align: center;
+  padding-top: 1rem;
+  margin-left: 3rem;
+  margin-right: 3rem; }
+
+.stroke_clear {
+  border-bottom: 0.3rem solid #50E3C2;
+  border-radius: 1rem;
+  width: 10%;
+  margin: 0 auto; }
+
+/* GRID CLASSES */
+.projects {
+  background-color: yellow; }
+
+/* ABOUT CLASSES */
+.about {
+  background-color: pink; }
+
+/* FORM CLASSES */
+.form {
+  background-color: lime; }
+
 a {
   color: #0000FD;
   font-weight: 400;
@@ -103,8 +129,8 @@ a {
         .navbar .menu li a:hover {
           padding-right: 3rem; }
 
+/* Mobile menu icon ACABAR CON JS*/
 @media (min-width: 768px) {
-  /* Mobile menu icon ACABAR CON JS*/
   #menu-icon {
     display: none; }
   .navbar {
@@ -163,6 +189,12 @@ h4 {
       font-size: 1.5rem;
       line-height: 2rem; } }
 
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+  color: #0000FD; }
+
 h5 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -184,7 +216,57 @@ p {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
-  text-align: center; }
+  text-align: center;
+  color: #4A4A4A; }
+
+label {
+  margin-bottom: 0.5rem;
+  margin-top: 1rem; }
+
+label, input:not(.btn), textarea {
+  width: 100%;
+  display: block; }
+
+input, textarea {
+  border: none;
+  background-color: #A8A9AC;
+  height: 4rem;
+  max-width: 20rem; }
+
+input {
+  line-height: 2rem; }
+  input:not(.btn) {
+    height: 3rem; }
+
+/* BOTONES */
+.btn {
+  font-weight: 700;
+  background: none;
+  border: 2px solid;
+  border-bottom-width: 4px;
+  text-transform: uppercase;
+  margin: 1em;
+  padding: 0.5em 2.5em;
+  -webkit-transition: color 1s;
+  transition: color 1s; }
+
+.btn-h {
+  color: #0000FD; }
+
+.btn-h:hover {
+  -webkit-animation: jellyfish 0.35s infinite linear;
+  animation: jellyfish 0.35s infinite linear;
+  background: -webkit-linear-gradient(45deg, #0000FD 0.5em, transparent 0.5em) 0 0/1em 1em, -webkit-linear-gradient(135deg, #d3f169 0.5em, transparent 0.5em) 0 0/1em 1em;
+  background: linear-gradient(45deg, #50E3C2 0.5em, transparent 0.5em) 0 0/1em 1em, linear-gradient(-45deg, #0000FD 0.5em, transparent 0.5em) 0 0/1em 1em;
+  color: #0000FD; }
+
+@-webkit-keyframes jellyfish {
+  100% {
+    background-position: 1em 0; } }
+
+@keyframes jellyfish {
+  100% {
+    background-position: 1em 0; } }
 
 html {
   font-family: sans-serif;

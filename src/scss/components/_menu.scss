@@ -41,7 +41,6 @@ a {
 	cursor: pointer;
 	opacity: 1;
 	padding: 0 0.4em;
-
 }
 
 .navbar {
@@ -66,10 +65,10 @@ a {
 			}
 		}
 	}
-}			
-@media (min-width: $tablet-width) {
+}
 
-  /* Mobile menu icon ACABAR CON JS*/
+/* Mobile menu icon ACABAR CON JS*/			
+@media (min-width: $tablet-width) {
   #menu-icon {
   	display: none;
   }
@@ -80,7 +79,6 @@ a {
   	.menu li {
   		list-style-type: none;
   		display: inline-block;
-
   	}
   }
 }

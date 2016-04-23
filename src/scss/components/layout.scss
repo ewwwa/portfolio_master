@@ -1,6 +1,6 @@
 /* CLAIM BACKGROUND CLASSES */
-.container {
-  padding-top: 4rem;
+#container {
+  padding-top: 2rem;
   width: 100%;
 }
 
@@ -16,7 +16,7 @@
 
 .claim-link {  
   padding-top: 2rem;
-  padding-bottom: 8rem;
+  padding-bottom: 2rem;
 }
 
 .divide {
@@ -39,7 +39,7 @@
 
   .claim-link {  
     padding-top: 3rem;
-    padding-bottom: 8rem;
+    padding-bottom: 4rem;
   }
 
   .divide {
@@ -51,9 +51,39 @@
 
 }
 
+/* CONTAINER CLASSES */
 
-/* FORM */
+.section_container {
+  background-color: $bg;
+  text-align: center;
+  padding-top:1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
 
+}
 
+.stroke_clear {
+  border-bottom: 0.3rem solid $secondary;
+  border-radius: 1rem;
+  width: 10%;
+  margin: 0 auto;
 
+}
 
+/* GRID CLASSES */
+
+.projects {
+  background-color: yellow;
+}
+
+/* ABOUT CLASSES */
+
+.about {
+  background-color: pink;
+}
+
+/* FORM CLASSES */
+
+.form {
+  background-color: lime;
+}

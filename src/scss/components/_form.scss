@@ -1,0 +1,26 @@
+label {
+
+	margin-bottom: 0.5rem;
+	margin-top: 1rem;
+}
+
+label, input:not(.btn), textarea {
+	width: 100%;
+	display: block;
+}
+
+input, textarea {
+	border: none;
+	background-color: #A8A9AC;
+	height: 4rem;
+	max-width: 20rem;
+}
+
+input {
+	line-height: 2rem;
+
+	&:not(.btn) {
+		height: 3rem;
+		}
+}
+

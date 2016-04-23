@@ -54,6 +54,14 @@ h4{
 	}
 }
 
+h3 {
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+    color: $primary;
+}
+
 
 h5 {
 	font-family: 'Montserrat', sans-serif;
@@ -81,4 +89,5 @@ p {
 	font-size: 1rem;
 	line-height: 1.5rem;
 	text-align: center;
+	color: $p;
 }
