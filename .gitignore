@@ -1,3 +1,4 @@
 node_modules/
 logs/
+publish/
 npm-debug.log

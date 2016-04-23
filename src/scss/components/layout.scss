@@ -1,0 +1,59 @@
+/* CLAIM BACKGROUND CLASSES */
+.container {
+  padding-top: 4rem;
+  width: 100%;
+}
+
+.content {
+  vertical-align: middle;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.claim {
+  margin-top: 2rem;
+}
+
+.claim-link {  
+  padding-top: 2rem;
+  padding-bottom: 8rem;
+}
+
+.divide {
+  border: 0.2rem solid $bg;
+  border-radius: 2rem;
+  width: 10%;
+  margin: 0 auto;
+}
+
+
+@media (min-width: $tablet-width) {
+  .content {
+    padding-bottom: 4rem;
+
+  }
+
+  .claim {
+    margin-top: 4rem;
+  }
+
+  .claim-link {  
+    padding-top: 3rem;
+    padding-bottom: 8rem;
+  }
+
+  .divide {
+    border: 0.4rem solid $bg;
+    border-radius: 2rem;
+    width: 20%;
+    margin: 0 auto;
+  }
+
+}
+
+
+/* FORM */
+
+
+
+
