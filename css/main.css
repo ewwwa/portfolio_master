@@ -13,7 +13,7 @@ body {
 
 /* MEDIAQUERIES */
 /* CLAIM BACKGROUND CLASSES */
-.container {
+#container {
   padding-top: 2rem;
   width: 100%; }
 
@@ -63,9 +63,17 @@ body {
   width: 10%;
   margin: 0 auto; }
 
+/* GRID CLASSES */
+.projects {
+  background-color: yellow; }
+
+/* ABOUT CLASSES */
+.about {
+  background-color: pink; }
+
 /* FORM CLASSES */
 .form {
-  background-color: yellow; }
+  background-color: lime; }
 
 a {
   color: #0000FD;
@@ -210,6 +218,55 @@ p {
   line-height: 1.5rem;
   text-align: center;
   color: #4A4A4A; }
+
+label {
+  margin-bottom: 0.5rem;
+  margin-top: 1rem; }
+
+label, input:not(.btn), textarea {
+  width: 100%;
+  display: block; }
+
+input, textarea {
+  border: none;
+  background-color: #A8A9AC;
+  height: 4rem;
+  max-width: 20rem; }
+
+input {
+  line-height: 2rem; }
+  input:not(.btn) {
+    height: 3rem; }
+
+/* BOTONES */
+.btn {
+  font-weight: 700;
+  background: none;
+  border: 2px solid;
+  border-bottom-width: 4px;
+  text-transform: uppercase;
+  margin: 1em;
+  padding: 0.5em 2.5em;
+  -webkit-transition: color 1s;
+  transition: color 1s; }
+
+.btn-h {
+  color: #0000FD; }
+
+.btn-h:hover {
+  -webkit-animation: jellyfish 0.35s infinite linear;
+  animation: jellyfish 0.35s infinite linear;
+  background: -webkit-linear-gradient(45deg, #0000FD 0.5em, transparent 0.5em) 0 0/1em 1em, -webkit-linear-gradient(135deg, #d3f169 0.5em, transparent 0.5em) 0 0/1em 1em;
+  background: linear-gradient(45deg, #50E3C2 0.5em, transparent 0.5em) 0 0/1em 1em, linear-gradient(-45deg, #0000FD 0.5em, transparent 0.5em) 0 0/1em 1em;
+  color: #0000FD; }
+
+@-webkit-keyframes jellyfish {
+  100% {
+    background-position: 1em 0; } }
+
+@keyframes jellyfish {
+  100% {
+    background-position: 1em 0; } }
 
 html {
   font-family: sans-serif;
