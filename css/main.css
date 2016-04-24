@@ -272,9 +272,7 @@ p {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-bottom: 2rem;
-  margin-left: 4rem;
-  margin-right: 4rem; }
+  padding-bottom: 2rem; }
 
 .center {
   display: inline-block;
