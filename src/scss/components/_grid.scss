@@ -3,7 +3,7 @@
   max-width: 960px;
   padding: 20px;
 }
-.colonnes {
+.grid-images {
   -webkit-column-count: 3;
   -moz-column-count: 3;
   column-count: 3;
@@ -15,7 +15,7 @@
   column-width: 33.33333333333333%;
 }
 @media only screen and (min-width: 480px) and (max-width: 727px) {
-  .colonnes {
+  .grid-images {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
@@ -25,7 +25,7 @@
   }
 }
 @media only screen and (max-width: 479px) {
-  .colonnes {
+  .grid-images {
     -webkit-column-count: 1;
     -moz-column-count: 1;
     column-count: 1;

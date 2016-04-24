@@ -2,6 +2,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1rem;
 	line-height: 1.5rem;
+	  text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	background-image: url(../img/img-bg.jpg);
 	background-position: center center;
@@ -9,8 +10,12 @@ body {
 	background-attachment: fixed;
 	background-size: cover;
 	background-color: $primary;
+	max-width: 100%;
+	height: auto;
 
 }
+
+
 
 /* MEDIAQUERIES */
 

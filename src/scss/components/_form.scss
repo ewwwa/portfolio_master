@@ -1,5 +1,4 @@
 label {
-
 	margin-bottom: 0.5rem;
 	margin-top: 1rem;
 }
@@ -14,6 +13,7 @@ input, textarea {
 	background-color: #A8A9AC;
 	height: 4rem;
 	max-width: 20rem;
+	text-align: center;
 }
 
 input {
@@ -21,6 +21,6 @@ input {
 
 	&:not(.btn) {
 		height: 3rem;
-		}
+	}
 }
 
