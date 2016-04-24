@@ -43,6 +43,11 @@
 
 }
 
+.section-content-basis {
+  -webkit-flex-basis: 200px;
+      -ms-flex-preferred-size: 200px;
+          flex-basis: 200px; }
+
 .center {
   display: inline-block;
   text-align: center; 
