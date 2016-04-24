@@ -246,22 +246,6 @@ p {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
-.section-content-staff {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding-top: 5rem; }
-
 .section-content-staff-1 {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
