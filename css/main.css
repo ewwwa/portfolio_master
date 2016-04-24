@@ -97,7 +97,7 @@ a {
   -moz-box-shadow: 0px 8px 3px -6px black;
   box-shadow: 0px 8px 3px -6px black; }
 
-.wrap {
+.wrap-header {
   max-width: 1440px;
   /* Cambio de posición NAVBAR*/
   margin-left: 1em; }
