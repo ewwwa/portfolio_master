@@ -270,8 +270,8 @@ p {
   -ms-flex-direction: column;
   flex-direction: column;
   padding-bottom: 2rem;
-  margin-left: 2rem;
-  margin-right: 2rem; }
+  margin-left: 4rem;
+  margin-right: 4rem; }
 
 .center {
   display: inline-block;
