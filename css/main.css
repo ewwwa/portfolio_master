@@ -276,7 +276,7 @@ p {
   margin-left: 4rem;
   margin-right: 4rem; }
 
-.f-basis-2 {
+.section-content-basis {
   -webkit-flex-basis: 200px;
   -ms-flex-preferred-size: 200px;
   flex-basis: 200px; }
