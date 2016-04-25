@@ -76,7 +76,7 @@ body {
   background-color: #FFFFFF; }
 
 /* FORM CLASSES */
-.form_ {
+.contact {
   background-color: lime; }
 
 a {
@@ -495,6 +495,12 @@ input:focus, textarea:focus {
     padding-right: 3%; } }
 
 /* BOTONES */
+.link-home {
+  color: yellow;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem; }
+
 .btn {
   font-weight: 700;
   background: none;
