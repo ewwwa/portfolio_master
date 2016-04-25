@@ -6,7 +6,7 @@ body {
   line-height: 1.5rem;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  background-image: url(../img/img-bg.jpg);
+  background-image: url(../img/img-background.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -286,7 +286,7 @@ p {
   padding-top: 1rem;
   height: 180px;
   width: 180px;
-  background-color: green;
+  background-repeat: no-repeat;
   border-radius: 70px 7px; }
 
 .staff-img-01 {
