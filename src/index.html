@@ -18,9 +18,9 @@
       <a id="menu-icon">&#9776; Menu</a>
       <nav class="navbar">
         <ul class="menu">
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -33,18 +33,18 @@
       <h1>Hello, we are <span class="t_h1">Musamedusa</span></h1>
       <div class="divide"></div>
       <h2 class="claim">A designers, developers <br>and illustrators community.<br> We love simmetry in everything.</h2>
-      <h4 class="claim-link">Take a look at our <u>projects!</u></h4>
+      <h4 class="claim-link">Take a look at our <a class="link_home" href="#projects">projects!</a></h4>
     </section>
 
     <!--PROJECTS SECTION: GRID-->
-    <section class="projects">
+    <section class="projects" id="projects">
       <div class="section_container">
         <h3>Projects</h3>
         <h5>Passion</h5>
         <div class="stroke_clear"></div>
         <p>You can find a taste about what we love. <br>Design!</p>
       </div>
-      <div class="container-img grid-images">
+      <div class="container-grid grid-images">
         <a href="#"><img class="grid" src= "img/d_01.jpg" alt="img_portfolio"></a>
         <a href="#"><img class="grid"  src="img/d_02.jpg" alt="img_portfolio"></a>
         <a href="#"><img class="grid"  src="img/d_03.jpg" alt="img_portfolio"></a>
@@ -57,7 +57,7 @@
     </section>
 
     <!--ABOUT SECTION-->
-    <section class="about">
+    <section class="about" id="about">
       <div class="section_container">
         <h3>About us</h3>
         <h5>Professionals</h5>
@@ -113,25 +113,40 @@
     </div>
 
     <!--FORM SECTION-->
-    <section class="form">
-      <div class="section_container">
+<section class="contact" id="contact">
+  <div class="section_container">
         <h3>Contact us</h3>
         <h5>information</h5>
         <div class="stroke_clear"></div>
         <p>For high-level professionals contact us. <br>Let’s work together!</p>
 
-        <div class="section_container">
-          <label>Your name</label>
-          <input></input>
-          <label>Your email</label>
-          <input></input>
-          <label>Your message</label>
-          <textarea></textarea> 
-          <button class="btn btn-h">send</button>
+    <!--<div id="form-main"-->
+        
+        <form id="form-div">
+        <p class="name">
+        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+        </p>
+      
+        <p class="email">
+        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+        </p>
+      
+        <p class="text">
+        <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+        </p>
+        <div class="submit">
+        <input type="submit" value="SEND" id="button"/>
         </div>
-      </section>
-    </div>
-
+        </form>
+        
+  </div>
+     <!--</div>-->
+</section>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="js/smooth.js"></script>
   </body>
+
   </html>
+
 

@@ -8,6 +8,7 @@ var browserSync = require('browser-sync').create();
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
 var ghPages = require('gulp-gh-pages');
+var del = require('del');
  
 gulp.task('deploy', function() {
   return gulp.src('./dist/**/*')
@@ -48,7 +49,7 @@ return gulp.src('src/SCSS/*.scss')
 	.pipe(autoprefixer({
 		browsers:[
 		'last 2 versions',
-		'>1%'
+		'>10%'
 		]
 	}))
 	.pipe(gulp.dest('dist/css'))
@@ -69,14 +70,35 @@ gulp.task('img', function() {
         .pipe(gulp.dest('dist/img'));
 });
 
+gulp.task('scripts', function() {
+  // Minify and copy all JavaScript (except vendor scripts) 
+  // with sourcemaps all the way down 
+  return gulp.src( './src/js/**/*.js')
+      // .pipe(uglify())
+      // .pipe(concat('all.min.js'))
+    .pipe(gulp.dest('dist/js'));
+});
 
-gulp.task('default', ['sass','html'], function() {
+gulp.task('clean', function() {
+  // You can use multiple globbing patterns as you would with `gulp.src` 
+  return del(['dist']);
+});
+
+gulp.task('build', ['clean'], function() {
+    gulp.start('sass');
+    gulp.start('scripts');
+    gulp.start('html');
+    gulp.start('img');
+});
+
+gulp.task('default', ['build'], function() {
     browserSync.init({
         server: {baseDir: "./dist"}, 
         files:['./dist/css/main.css','./dist/*.html']
     });
     gulp.watch('src/scss/**/*.scss',['sass']);
     gulp.watch('src/*.html',['html']);
+    gulp.watch('src/*.js',['scripts']);
     gulp.watch('./dist/*.html').on('change', browserSync.reload)
 });
 
