@@ -56,9 +56,7 @@ body {
 .section_container {
   background-color: #FFFFFF;
   text-align: center;
-  padding-top: 1rem;
-  margin-left: 3rem;
-  margin-right: 3rem; }
+  padding-top: 1rem; }
 
 .stroke_clear {
   border-bottom: 0.3rem solid #50E3C2;
@@ -78,6 +76,10 @@ body {
 .contact {
   background-color: #FFFFFF; }
 
+.stroke {
+  border-bottom: 0.3rem solid #50E3C2;
+  width: 100%; }
+
 a {
   color: #0000FD;
   font-weight: 400;
@@ -91,8 +93,7 @@ a {
   position: relative;
   width: 100%;
   background-color: #FFFFFF;
-  height: 4rem;
-  line-height: 50px;
+  line-height: 70px;
   -webkit-box-shadow: 0px 8px 3px -6px black;
   -moz-box-shadow: 0px 8px 3px -6px black;
   box-shadow: 0px 8px 3px -6px black; }
@@ -103,7 +104,7 @@ a {
   margin-left: 1em; }
 
 .logo {
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   padding-left: 1rem; }
 
 /* Mobile menu */
@@ -365,11 +366,6 @@ p {
   height: auto;
   margin-bottom: 1rem; }
 
-.dv-bg-contact {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
-
 .form {
   width: 80%;
   display: flex;
@@ -386,35 +382,54 @@ p {
     flex-direction: column;
     align-items: center; }
   .form .label-info {
-    text-align: left;
     margin: 2rem auto .5rem auto;
     color: #4A4A4A; }
-  .form label.error {
+  .form label.mistake {
     color: red;
     display: none;
     height: 0; }
   .form .input, .form .textarea {
     width: 100%;
     border: 1px solid blue;
-    padding-left: 0.5rem;
-    padding-top: 0.5rem; }
+    padding-left: 1rem; }
   .form .input {
-    min-height: 2rem; }
+    min-height: 3rem; }
   .form .textarea {
-    min-height: 10rem; }
+    min-height: 10rem;
+    padding-top: 1rem; }
+
+/* BOTONES */
+.link-home {
+  color: yellow;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-decoration: underline; }
+  .link-home:hover {
+    color: #50E3C2;
+    text-decoration: underline; }
+  @media (min-width: 768px) {
+    .link-home {
+      font-size: 1.5rem;
+      line-height: 2rem; } }
+
+.link-staff {
+  color: yellow; }
+  .link-staff:hover {
+    color: #50E3C2; }
 
 #button {
   float: left;
   font-weight: 700;
   text-transform: uppercase;
   background-color: #FFFFFF;
-  width: 100%;
+  width: 80%;
   border: 1px solid #0000FD;
-  border-bottom-width: 4px;
   cursor: pointer;
   color: #0000FD;
   font-size: 24px;
   margin-top: 2rem;
+  margin-bottom: 3rem;
   padding-top: 22px;
   padding-bottom: 22px;
   -webkit-transition: color 1s;
@@ -426,51 +441,6 @@ p {
   background: -webkit-linear-gradient(45deg, #0000FD 0.5em, transparent 0.5em) 0 0/1em 1em, -webkit-linear-gradient(135deg, #50E3C2 0.5em, transparent 0.5em) 0 0/1em 1em;
   background: linear-gradient(45deg, #50E3C2 0.5em, transparent 0.5em) 0 0/1em 1em, linear-gradient(-45deg, #0000FD 0.5em, transparent 0.5em) 0 0/1em 1em;
   color: #50E3C2; }
-
-@-webkit-keyframes jellyfish {
-  100% {
-    background-position: 1em 0; } }
-
-@keyframes jellyfish {
-  100% {
-    background-position: 1em 0; } }
-
-@media only screen and (max-width: 580px) {
-  #form-div {
-    left: 3%;
-    margin-right: 3%;
-    width: 88%;
-    margin-left: 0;
-    padding-left: 3%;
-    padding-right: 3%; } }
-
-/* BOTONES */
-.link-home {
-  color: yellow;
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.5rem; }
-
-.btn {
-  font-weight: 700;
-  background: none;
-  border: 2px solid;
-  border-bottom-width: 4px;
-  text-transform: uppercase;
-  margin: 1em;
-  padding: 0.5em 2.5em;
-  -webkit-transition: color 1s;
-  transition: color 1s; }
-
-.btn-h {
-  color: #0000FD; }
-
-.btn-h:hover {
-  -webkit-animation: jellyfish 0.35s infinite linear;
-  animation: jellyfish 0.35s infinite linear;
-  background: -webkit-linear-gradient(45deg, #0000FD 0.5em, transparent 0.5em) 0 0/1em 1em, -webkit-linear-gradient(135deg, #d3f169 0.5em, transparent 0.5em) 0 0/1em 1em;
-  background: linear-gradient(45deg, #50E3C2 0.5em, transparent 0.5em) 0 0/1em 1em, linear-gradient(-45deg, #0000FD 0.5em, transparent 0.5em) 0 0/1em 1em;
-  color: #0000FD; }
 
 @-webkit-keyframes jellyfish {
   100% {
