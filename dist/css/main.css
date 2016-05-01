@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
@@ -77,7 +76,7 @@ body {
 
 /* FORM CLASSES */
 .contact {
-  background-color: lime; }
+  background-color: #FFFFFF; }
 
 a {
   color: #0000FD;
@@ -87,12 +86,11 @@ a {
     color: #50E3C2;
     text-decoration: none; }
 
-/* CSS HEADER*/
+/* Header */
 .header {
   position: relative;
   width: 100%;
   background-color: #FFFFFF;
-  height: 3rem;
   line-height: 50px;
   -webkit-box-shadow: 0px 8px 3px -6px black;
   -moz-box-shadow: 0px 8px 3px -6px black;
@@ -107,7 +105,7 @@ a {
   padding-top: 1rem;
   padding-left: 1rem; }
 
-/* MENU MOBIL ACABAR CON JS*/
+/* Mobile menu */
 #menu-icon {
   display: block;
   position: absolute;
@@ -115,34 +113,54 @@ a {
   right: 1em;
   cursor: pointer;
   opacity: 1;
-  padding: 0 0.4em; }
+  padding: 0 0.4em;
+  color: #0000FD; }
+
+#menu-icon:hover {
+  text-decoration: none;
+  border: none;
+  color: #50E3C2; }
 
 .navbar {
   float: none;
+  background-color: #FFFFFF;
   max-height: 0;
-  overflow: hidden; }
-  .navbar .menu {
-    margin: 0;
-    padding: 0;
-    list-style-type: none; }
-    .navbar .menu li {
-      list-style-type: none;
-      display: block; }
-      .navbar .menu li a {
-        padding-right: 3rem; }
-        .navbar .menu li a:hover {
-          padding-right: 3rem; }
+  overflow: hidden;
+  margin: 0;
+  padding-top: 0; }
 
-/* Mobile menu icon ACABAR CON JS*/
-@media (min-width: 768px) {
+.navbar .menu {
+  margin: 0;
+  padding-top: 0;
+  list-style-type: none; }
+
+.navbar .menu li {
+  list-style-type: none;
+  display: block; }
+
+.navbar .menu li a {
+  display: block;
+  text-decoration: none;
+  color: #0000FD;
+  padding-right: 3rem; }
+
+.navbar .menu li a:hover {
+  padding-right: 3rem;
+  color: #50E3C2; }
+
+.expand {
+  max-height: 30em; }
+
+@media only screen and (min-width: 768px) {
+  /* Mobile menu icon */
   #menu-icon {
     display: none; }
   .navbar {
     float: right;
     max-height: 1000px; }
-    .navbar .menu li {
-      list-style-type: none;
-      display: inline-block; } }
+  .navbar .menu li {
+    list-style-type: none;
+    display: inline-block; } }
 
 h1 {
   font-family: 'Montserrat', sans-serif;
@@ -346,125 +364,50 @@ p {
   height: auto;
   margin-bottom: 1rem; }
 
-#feedback-page {
-  text-align: center; }
-
-#text-feedback {
+.form {
   width: 80%;
-  padding-left: 10%;
-  padding-right: 10%;
-  background-color: cyan;
-  text-align: center; }
-
-/*#form-main{
-	width:100%;
-	float:left;
-	padding-top:30px;
-}*/
-#form-div {
-  background-color: pink;
-  padding-left: 35px;
-  padding-right: 35px;
-  padding-top: 35px;
-  padding-bottom: 50px;
-  width: 450px;
-  float: left;
-  left: 50%;
-  position: absolute;
-  margin-left: -260px; }
-
-.feedback-input {
-  opacity: 0.9;
-  color: #0493bd;
-  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  border-radius: 0;
-  line-height: 22px;
-  background-color: #fbfbfb;
-  border: 3px solid #fbfbfb;
-  padding: 13px 13px 13px 54px;
-  margin-bottom: 10px;
-  width: 100%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.feedback-input:focus {
-  background: #fff;
-  box-shadow: 0;
-  border: 3px solid yellow;
-  color: yellow;
-  outline: none;
-  padding: 13px 13px 13px 54px; }
-
-.focused {
-  color: yellow;
-  border: yellow solid 3px; }
-
-/* Icons ---------------------------------- */
-#name {
-  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-  background-size: 30px 30px;
-  background-position: 11px 8px;
-  background-repeat: no-repeat; }
-
-#name:focus {
-  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-  background-size: 30px 30px;
-  background-position: 8px 5px;
-  background-position: 11px 8px;
-  background-repeat: no-repeat;
-  background-color: blue; }
-
-#email {
-  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-  background-size: 30px 30px;
-  background-position: 11px 8px;
-  background-repeat: no-repeat; }
-
-#email:focus {
-  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-  background-size: 30px 30px;
-  background-position: 11px 8px;
-  background-repeat: no-repeat;
-  background-color: blue; }
-
-#comment {
-  background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
-  background-size: 30px 30px;
-  background-position: 11px 8px;
-  background-repeat: no-repeat; }
-
-#comment:focus {
-  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-  background-size: 30px 30px;
-  background-position: 11px 8px;
-  background-repeat: no-repeat;
-  background-color: blue; }
-
-textarea {
-  width: 100%;
-  height: 150px;
-  line-height: 150%;
-  background-color: lime; }
-
-input:hover, textarea:hover,
-input:focus, textarea:focus {
-  background-color: lime; }
+  display: flex;
+  align-text: center;
+  margin: 1rem auto;
+  /*MEDIA QUERIES*/ }
+  @media only screen and (min-width: 1024px) {
+    .form {
+      width: 40%; } }
+  .form form {
+    font-weight: 400;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .form .label-info {
+    margin: 2rem auto .5rem auto;
+    color: #4A4A4A; }
+  .form label.mistake {
+    color: red;
+    display: none;
+    height: 0; }
+  .form .input, .form .textarea {
+    width: 100%;
+    border: 1px solid blue;
+    padding-left: 1rem; }
+  .form .input {
+    min-height: 3rem; }
+  .form .textarea {
+    min-height: 10rem;
+    padding-top: 1rem; }
 
 #button {
   float: left;
   font-weight: 700;
   text-transform: uppercase;
-  background: none;
-  width: 100%;
-  border: 2px solid;
-  border-bottom-width: 4px;
+  background-color: #FFFFFF;
+  width: 80%;
+  border: 1px solid #0000FD;
   cursor: pointer;
-  color: white;
+  color: #0000FD;
   font-size: 24px;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
   padding-top: 22px;
   padding-bottom: 22px;
   -webkit-transition: color 1s;
@@ -485,15 +428,16 @@ input:focus, textarea:focus {
   100% {
     background-position: 1em 0; } }
 
-@media only screen and (max-width: 580px) {
-  #form-div {
-    left: 3%;
-    margin-right: 3%;
-    width: 88%;
-    margin-left: 0;
-    padding-left: 3%;
-    padding-right: 3%; } }
-
+/*@media only screen and (max-width: 580px) {
+	#form-div{
+		left: 3%;
+		margin-right: 3%;
+		width: 100%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}*/
 /* BOTONES */
 .link-home {
   color: yellow;
