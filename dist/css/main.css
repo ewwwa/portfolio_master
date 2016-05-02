@@ -90,7 +90,6 @@ a {
 
 /* Header */
 .header {
-  position: relative;
   width: 100%;
   background-color: #FFFFFF;
   line-height: 70px;
@@ -327,6 +326,19 @@ p {
 .staff-img-06 {
   background-image: url(../img/img-staff-06.png); }
 
+.box-grid {
+  position: relative; }
+
+.box-info-grid {
+  display: block;
+  width: 100%;
+  background-color: #000000;
+  opacity: .70;
+  text-align: center;
+  bottom: 0.4rem;
+  position: absolute;
+  color: yellow; }
+
 .container-grid {
   margin: 0 auto;
   max-width: 960px;
@@ -434,13 +446,12 @@ p {
   padding-bottom: 22px;
   -webkit-transition: color 1s;
   transition: color 1s; }
-
-#button:hover {
-  -webkit-animation: jellyfish 0.35s infinite linear;
-  animation: jellyfish 0.35s infinite linear;
-  background: -webkit-linear-gradient(45deg, #0000FD 0.5em, transparent 0.5em) 0 0/1em 1em, -webkit-linear-gradient(135deg, #50E3C2 0.5em, transparent 0.5em) 0 0/1em 1em;
-  background: linear-gradient(45deg, #50E3C2 0.5em, transparent 0.5em) 0 0/1em 1em, linear-gradient(-45deg, #0000FD 0.5em, transparent 0.5em) 0 0/1em 1em;
-  color: #50E3C2; }
+  #button:hover {
+    -webkit-animation: jellyfish 0.35s infinite linear;
+    animation: jellyfish 0.35s infinite linear;
+    background: -webkit-linear-gradient(45deg, #0000FD 0.5em, transparent 0.5em) 0 0/1em 1em, -webkit-linear-gradient(135deg, #50E3C2 0.5em, transparent 0.5em) 0 0/1em 1em;
+    background: linear-gradient(45deg, #50E3C2 0.5em, transparent 0.5em) 0 0/1em 1em, linear-gradient(-45deg, #0000FD 0.5em, transparent 0.5em) 0 0/1em 1em;
+    color: #50E3C2; }
 
 @-webkit-keyframes jellyfish {
   100% {
