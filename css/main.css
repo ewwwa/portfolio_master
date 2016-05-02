@@ -90,7 +90,6 @@ a {
 
 /* Header */
 .header {
-  position: relative;
   width: 100%;
   background-color: #FFFFFF;
   line-height: 70px;
@@ -326,6 +325,19 @@ p {
 
 .staff-img-06 {
   background-image: url(../img/img-staff-06.png); }
+
+.box-grid {
+  position: relative; }
+
+.box-info-grid {
+  display: block;
+  width: 100%;
+  background-color: #000000;
+  opacity: .70;
+  text-align: center;
+  bottom: 0.4rem;
+  position: absolute;
+  color: yellow; }
 
 .container-grid {
   margin: 0 auto;
