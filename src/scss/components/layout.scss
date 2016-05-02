@@ -1,4 +1,40 @@
+/* LINKS */
+
+a {
+  color: $primary; 
+  font-weight: 400;
+  text-decoration: none;
+  &:hover {
+    color: $secondary;
+    text-decoration: none;
+  }
+}
+
+.link-home {
+  color: $link;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-decoration: underline;
+  &:hover {
+    color: $secondary;
+    text-decoration: underline;
+  }
+  @media (min-width: $tablet-width) {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.link-staff {
+  color: $link;
+  &:hover {
+    color: $secondary;
+  }
+}
+
 /* CLAIM BACKGROUND CLASSES */
+
 #container {
   padding-top: 2rem;
   width: 100%;
@@ -26,11 +62,9 @@
   margin: 0 auto;
 }
 
-
 @media (min-width: $tablet-width) {
   .content {
     padding-bottom: 4rem;
-
   }
 
   .claim {
@@ -48,16 +82,14 @@
     width: 20%;
     margin: 0 auto;
   }
-
 }
 
-/* CONTAINER CLASSES */
+/* CONTAINER CLASSES / STROKE CLASSES */
 
 .section_container {
   background-color: $bg;
   text-align: center;
   padding-top:1rem;
-
 }
 
 .stroke_clear {
@@ -65,31 +97,20 @@
   border-radius: 1rem;
   width: 10%;
   margin: 0 auto;
+}
 
+.stroke {
+  border-bottom: 0.3rem solid $secondary;
+  width: 100%;
 }
 
 /* GRID CLASSES */
 
-.projects {
-  background-color: $bg;
-}
-
-/* ABOUT CLASSES */
-
-.about {
-  background-color: $bg;
-}
-
-/* FORM CLASSES */
-
-.contact {
+.projects, .about, .contact {
   background-color: $bg;
 }
 
 
-.stroke {
-border-bottom: 0.3rem solid $secondary;
-width: 100%;
-}
+
 
 

@@ -1,46 +1,46 @@
 .wrap {
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; 
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; 
 }
 
 .section-content-staff {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    padding-top: 5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 5rem;
 }
 
 .section-content-staff-1 {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding-bottom: 2rem; 
-    margin-left:4rem;
-    margin-right:4rem;
-
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 2rem; 
+  margin-left:4rem;
+  margin-right:4rem;
 }
 
 .section-content-basis {
   -webkit-flex-basis: 200px;
-      -ms-flex-preferred-size: 200px;
-          flex-basis: 200px; }
+  -ms-flex-preferred-size: 200px;
+  flex-basis: 200px; 
+}
 
 .center {
   display: inline-block;
@@ -57,26 +57,41 @@
 }
 
 .staff-img-01 {
-background-image: url(../img/img-staff-01.png);
-
+  background-image: url(../img/img-staff-01.png);
 }
 
 .staff-img-02 {
-background-image: url(../img/img-staff-02.png);
+  background-image: url(../img/img-staff-02.png);
 }
 
 .staff-img-03 {
-background-image: url(../img/img-staff-03.png);
+  background-image: url(../img/img-staff-03.png);
 }
 
 .staff-img-04 {
-background-image: url(../img/img-staff-04.png);
+  background-image: url(../img/img-staff-04.png);
 }
 
 .staff-img-05 {
-background-image: url(../img/img-staff-05.png);
+  background-image: url(../img/img-staff-05.png);
 }
 
 .staff-img-06 {
-background-image: url(../img/img-staff-06.png);
+  background-image: url(../img/img-staff-06.png);
+}
+
+.staff-img-07 {
+  background-image: url(../img/img-staff-07.png);
+}
+
+.staff-img-08 {
+  background-image: url(../img/img-staff-08.png);
+}
+
+.staff-img-09 {
+  background-image: url(../img/img-staff-09.png);
+}
+
+.staff-img-10 {
+  background-image: url(../img/img-staff-10.png);
 }

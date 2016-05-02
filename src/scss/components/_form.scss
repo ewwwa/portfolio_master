@@ -1,4 +1,4 @@
-
+/* FORM */
 
 .form{
 	width: 80%;
@@ -6,38 +6,28 @@
 	align-text: center;
 	margin: 1rem auto;
 
-	/*MEDIA QUERIES*/
-    @media only screen and (min-width: 1024px){
-    	width: 40%;
-    }
+	@media only screen and (min-width: $tablet-width){
+		width: 40%;
+	}
 
 	form{
-		font-weight: 400;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-
 	}
 
 	.label-info{
-	margin: 2rem auto .5rem auto;
-	color: $p;
-	}
-
-	label.mistake{
-        color: $mistake;
-        display: none;
-        height: 0;
+		margin: 2rem auto .5rem auto;
+		color: $primary;
 	}
 
 	.input, .textarea{
 		width: 100%;
-		border: 1px solid blue;
+		border: 1px solid $primary;
 		padding-left: 1rem;
 
 	}
-	
 
 	.input{
 		min-height: 3rem;
